@@ -1,4 +1,4 @@
-* {
+/* * {
             box-sizing: border-box;
 }
 
@@ -24,67 +24,6 @@ html, a {
 
 
 
-/* 
-.content {
-            max-width: 1024px;
-            margin: auto;
-}
-
-.hero_main_size {
-            background: url(hero.jpg);
-            height: 800px;
-            background-size: cover;
-            background-position: center top;
-            padding-top: 20px;
-}
-
-
-
-
-/*Логотип, навигация */
-.header {
-            height: 80px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-}
-
-@media (max-width: 600px) {
-    .header {
-            flex-wrap: wrap;
-    }
-}
-
-
-.header__image_logo { 
-            height: 100px;
-            object-fit: contain;
-}
-
-
-/* выравнивание ссылок на стоимость и отзывы */
-
-
-.navigation__main {
-            display: flex;
-            gap: 30px;
-}
-
-/*якорная ссылка на стоимость*/
-
-.navigation_cost {   
-            font-size: 15px;
-}
-
-  
-.navigation_cost:hover {
-    color: #f97316;
-}
-
-.navigation_cost:visited {
-    color: #57534e;
-}
 
 
 
@@ -632,4 +571,4 @@ html, a {
 
 .icon__style_mail:hover {
             color: #ea580c;
-} */
+} 

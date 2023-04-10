@@ -1,635 +1,307 @@
 * {
-            box-sizing: border-box;
+        box-sizing: border-box;
 }
 
 
 html, a {
-            font-family: 'Open Sans', sans-serif;
-            color: black;
-            font-weight: 400;
-            text-decoration: none;
-            scroll-behavior: smooth;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        scroll-behavior: smooth;
 }
 
-.main {
-            max-width: 1024px;
-            margin: auto;
-}
-
-
-
-
-
-
-
-
-
-/* 
 .content {
-            max-width: 1024px;
-            margin: auto;
-}
-
-.hero_main_size {
-            background: url(hero.jpg);
-            height: 800px;
-            background-size: cover;
-            background-position: center top;
-            padding-top: 20px;
+        max-width: 1024px;
+        margin: auto;
 }
 
 
+/* Хэдер */
 
-
-/*Логотип, навигация */
 .header {
-            height: 80px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+        position: sticky;
+        height: 60px;
+        top: 0px;
+        background-color: #0284C7;
+        box-shadow: 0px 4px 15px #d4d4d4;
 }
 
-@media (max-width: 600px) {
+/* Навигация (логотип, ссылки)*/
+
+.header__navigation {
+        padding-top: 15px;
+        display: flex;
+         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;            
+}
+
+.header__logo {     
+        font-weight: 700;
+        font-size: 26px;
+        color: #fafafa;  
+}
+
+/* выравнивание ссылок */
+
+
+.navigation {
+        display: flex;
+        gap: 30px;
+}
+
+/* Свойства ссылок*/
+
+.header__link {     
+        font-weight: 600;
+        font-size: 22px;
+        color: #fafafa; 
+}
+
+
+.header__link:hover {
+        color: #38bdf8;
+}
+
+.header__link:visited {
+        color: #404040;
+}
+
+@media (max-width: 600px) { 
+    .header__navigation {
+        flex-wrap: wrap;      
+    }
     .header {
-            flex-wrap: wrap;
+        height: 80px;
     }
 }
 
 
-.header__image_logo { 
-            height: 100px;
-            object-fit: contain;
+
+/* Главная картинка с заголовком и кнопкой. Основной текст о специалистах клиники */
+
+.hero_description {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: center;
 }
 
 
-/* выравнивание ссылок на стоимость и отзывы */
-
-
-.navigation__main {
-            display: flex;
-            gap: 30px;
+.hero_description__title {
+        font-weight: 700;
+        font-size: 48px;
+        color: #0369A1;
+        margin-bottom: 50px;
 }
 
-/*якорная ссылка на стоимость*/
-
-.navigation_cost {   
-            font-size: 15px;
-}
-
-  
-.navigation_cost:hover {
-    color: #f97316;
-}
-
-.navigation_cost:visited {
-    color: #57534e;
+.hero_description__content {
+        font-weight: 600;
+        font-size: 24px;
+        color: #737373;
+        line-height: 35px;
 }
 
 
 
+/* Строка поиска (форма) */
 
-/*якорная ссылка на отзывы*/
 
-
-.navigation_reviews {   
-            font-size: 15px;
+.seach {
+        width: 980px;
+        height: 63px;     
+        margin: auto;
+        margin-bottom: 100px;
+        outline: 1px solid #7dd3fc;
+        border-radius: 15px;
+        background-color: #bae6fd;
 }
 
-.navigation_reviews:hover {
-            color: #f97316;
-}
-
-.navigation_reviews:visited {
-            color: #57534e;
-}
-
-
-/* Иконка телефон */
-
-.header_icon {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: flex-end;
-            font-size: 15px;
-}
-
-.header_icon__phone {
-            font-size: 15px;
-            margin-right: 15px;
-}
-
-
-.footer_icon__text {
-            font-size: 15px;
-}
-
-
-/*Главный заголовок, кнопка */
-.hero_size {
-            margin-top: 100px;        
-}
-
-.hero_title {
-            font-weight: 600;
-            font-size: 60px;
-            max-width: 500px;
-            margin-top: 100px;
- }
-
-    
-.hero_text {
-            margin-top: 30px;
-            margin-right: 40px;
-            margin-bottom: 30px;
-            font-weight: 300;
-            font-size: 22px;
-            max-width: 400px;
-            line-height: 130%;
+.seach_icon {
+        border-right: 2px solid #737373;
+        padding-right: 15px;
 }
 
 
 
 
 
-@media (max-width: 600px) {
-    .hero_title {
-            font-weight: 500;
-            font-size: 40px;
-            max-width: 400px;
-    }
 
-    .hero_text {
-            max-width: 250px;
-            font-size: 20px;
+
+/* Модульная сетка (фото врачей, кнопка подробнее) */
+
+
+.section__modular_grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 15px;
+        width: calc(100%-15px*2/3);
 }
 
- }
-
-
-.button_style {
-            background-color: #f97316;
-            border-radius: 10px;
-            border-style: none;
-            margin-top: 30px;
-            padding: 15px;
-            font-size: 20px;
-            color: white;
-            font-weight: 300;
-            cursor: pointer;
-} 
-
-.button_style:hover {
-            color: #1c1917;
-            background-color: #ea580c;
-}
-
-
-
-/*Наши преимущества. 3 блока*/
-.our_benefits {
-            margin-top: 100px;
-}
-
-.our_benefits__title { 
-            font-size: 34px;
-            text-align: center;
-            font-weight: 700;
-            margin-top: 90px;
-            margin-bottom: 60px;
-}
-
-.benefits {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-top: 30px;
-}
-
-
-
-@media (max-width: 600px) {
-    .benefits {
-            flex-direction: column;
-            gap: 30px;
-    }
-}
-
-.benefit {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 18px;
-            background-color: #fafaf9;
-            border-radius: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-            padding-top: 20px;
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-bottom: 20px;
-            text-align: center;    
-            line-height: 130%;
-}
-
-
-.benefit__image {
-            height: 55px;
-            width: 60px;
-            border-radius: 10px;       
-    }
-
-.benefit_talk {
-            font-size: 22px;
-            text-align: center;
-            margin-top: 20px;    
-            margin-bottom: 20px;
-            font-weight: 600;
-}
-
-
-/* О нас. Текст, картинка */
-
-.about_us {
-            margin-top: 100px;
-            padding-bottom: 20px;
-}
-
-.about_us__container {
-            display: flex;
-            flex-direction: row;
-            gap: 30px;
-}
-
-
-@media (max-width: 600px) {
-    .about_us__container {
-            flex-direction: column;
-            gap: 30px;
-       }
-}
-
-
-
-.about_us__title {
-            font-size: 30px;
-            text-align: start;
-            font-weight: 700;
-            margin-top: 10px;
-}
-
-.about_us__text {
-            font-size: 18px;
-            text-align: start;
-            padding-top: 20px;
-            padding-bottom: 10px;
-            line-height: 120%;
-            width: calc(100%-450px);
-            font-weight: 300;
-}
-
-.about_us__image {
-            width: 450px;
-            height: 350px;
-            object-fit: contain;
-}
-
-
-/*Форма заявки на урок */
-
-
-.request {
-            height: 350px;
-            background-color: #ffedd5;
-            margin-top: 70px;
-            padding-bottom: 20px;
-}
-
-.request_main {
-             padding-top: 30px;
-}
-
-
-.request_main__tile {
-            font-size: 35px;
-            text-align: center;
-            font-weight: 500;
-            padding-bottom: 20px;  
-}
-
-.request_main__text {
-            font-size: 18px;
-            color: #78716c;
-            text-align: center;
-            padding-bottom: 30px; 
-}
-
-.request_main__input {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: baseline;         
-}
-
-@media (max-width: 600px) {
-    
-    .request {
-            height: 450px;
-        }
-    
-    .request_main__input {
-            flex-direction: column;
-            width: 100%;
-            align-items: center;
-            gap: 30px;
-       }
-}
-
-
-
-
-.request_main__input_label {    
-            border-style: solid;
-            border-color: #fafaf9;
-            border-radius: 10px;
-            font-size: 24px;
-            margin-right: 10px; 
-}
- 
-
-
- 
-/* Отзывы довольных учеников */
-
-
-
-.reviews_gray {
-            background-color: #fafaf9;
-            padding-bottom: 50px;
-}
-
-
-.reviews_field { 
-            margin-top: 150px;
-}
-
-.reviews_title {
-            font-size: 34px;
-            text-align: center;
-            font-weight: 700;
-            padding-top: 50px;
-            margin-bottom: 60px;
-}
-
-.reviews_content {
-            max-width: 600px;
-            margin: auto;
-}
-
-.reviews_name {
-            font-size: 20px;
-            text-align: start;
-            font-weight: 500;
-            padding-top: 20px;
-            padding-bottom: 10px;
-}
-
-.reviews_text {
-            font-size: 16px;
-            color: #44403c;
-            text-align: start;
-            font-weight: 300;
-            padding-top: 10px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #d6d3d1;
-            padding: 20px 0;
-            width: 600px
-}
-
-@media (max-width: 600px) {
-    .reviews_name {
-            text-align: center;
-        }
-
-    .reviews_text {
-            text-align: center;
+@media (max-width: 600px) { 
+        .section__modular_grid {
+                flex-direction: column;
         }
 }
 
 
-
-
-/* Абонементы */
-
-.our_passes {
-            margin-top: 100px;
-}
-
-.our_passes__title {
-            font-size: 36px;
-            text-align: center;
-            font-weight: 600;
-            margin-top: 90px;
-            margin-bottom: 60px;
+.section_doctor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
 }
 
 
-.our_passes__size { 
-            display: flex;
-            flex-direction: row;
-            justify-content:space-between;
-            margin-top: 30px;
+/* Информация о докторе, кнопка */
+
+.doctor_image {
+        width: 330px;
+        height: 250px;
+        border-radius: 20px;
+}
+
+.doctor_name {
+        font-weight: 400;
+        font-size: 18px;
+        color: #404040;
+}
+
+.doctor_specialty {
+        font-weight: 700;
+        font-size: 18px;            
+        color: #404040;
+}
+
+.doctor__button_style {
+        font-weight: 700;
+        font-size: 18px;            
+        color: #0284C7;
+        background-color: #fafafa;
+        border-radius: 10px;
+        border: 1px solid #0284C7;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        padding: 15px;
+        width: 300px;
+        cursor: pointer;
+        transition: 500ms linear;
 }
 
 
-@media (max-width: 600px) {
-    .our_passes__size {
-            flex-direction: column;
-            gap: 30px;
-            align-items: center;
-    }
-}
-
-
-.our_passes__months {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: flex-start;
-            color: #44403c;
-            font-size: 16px;
-            border: 1px solid #ffedd5;           
-            border-radius: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-            padding-top: 20px;
-            padding-left: 15px;
-            padding-bottom: 20px; 
-            text-align: left;    
-            height: 300px;
-            width: 300px;
-            line-height: 130%;
-}
-
-
-.our_passes__month {         
-            color: #f97316;    
-}
-
-.our_passes__text {
-            font-size: 18px;
-            font-weight: 700;
-            padding-top: 15px;
-            padding-bottom: 5px;
-
-} 
-
-/* добавила контейнерю все элементы положила в него */
-.our_passes__basic_1m {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 2;
-            gap: 10px;
-            justify-content: space-between;
-            align-items: baseline;
-}
-
-
-
-.our_passes__basic_3m {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            gap: 5px;
-            justify-content: space-between;
-            align-items: baseline;
-}
-
-
-.our_passes__basic_6m {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: baseline;
-}
-
-
-
-.our_passes__icons_leveling {   
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: baseline;
-            padding-top: 5px;
-}
-
-.our_passes__image_check {
-            width: 15px;
-            height: 15x;
-            padding-right: 7px;
+.doctor__button_style:hover {
+        color: #fafafa;
+        background-color: #075985;
 }
 
 
 
 
-/*Футер*/
-
+/* Футер (модульные сетки)*/
 
 .footer {
-            background-color: #d6d3d1;
-            height: 180px;
-            margin-top: 60px;
-            padding-bottom: 50px;
+        background-color: #e0f2fe;
+        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
 }
 
 
-.footer_size {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding-top: 40px;
+.footer__modular_grid {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        width: calc(100%-15px*2/3);
 }
 
-@media (max-width: 600px) {
-    .footer_size {
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
-    }
+.footer_section-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 50%;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #075985;
 }
 
-
-.footer_icon__social-networks {
-            display: flex;
-            gap: 10px;
-} 
-
-
-.footer_icon__phone {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            align-items: baseline;
-          
+.footer_section-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: calc(50%/2);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #075985;
 }
 
-.footer_icon__phone_style {
-            color: #44403c;
-            font-size: 16px;
-            margin-right: 15px;
+.footer_section-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 70px;
+        width: calc(50%/2);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #075985;
 }
 
-
-
-/* Социальные сети */
-
-.footer_icon__inst {
-            color: #44403c;
-            font-size: 20px;
-            cursor: pointer;
+.footer_icon__position {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
 }
 
-
-.footer_icon__face {
-            color: #44403c;
-            font-size: 20px;
-            cursor: pointer;
+.footer__text_weight {
+        font-weight: 600;
 }
 
-
-.footer_icon__twit {
-            color: #44403c;
-            font-size: 20px;
-            cursor: pointer;
-}
-
-.footer_icon__inst:hover {
-            color: #ea580c
+.footer_link__post {
+        color: #075985;
+        transition: 300ms linear;
 }
 
 
-.footer_icon__face:hover {
-             color: #ea580c
+.footer_link__post:hover {
+        color: #171717;
+        font-size: 22px;
 }
 
 
-.footer_icon__twit:hover {
-            color: #ea580c
+.footer_license {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 17px;
+        color: #075985;
+}
+
+.footer_license__text {
+        padding-right: 5px;
+        border-right: 2px solid #075985;
 }
 
 
-/* Мыло */
+@media (max-width: 600px) {      
+        .footer__modular_grid {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+        }
+        .footer_section-1 {
+                width: 100%;
+        }
 
+        .footer_section-2 {
+                width: 100%;
+        }
 
-.icon__style_mail {
-            color: #44403c;
-            font-size: 16px;
+        .footer_section-3 {
+                width: 100%;
+        }
 }
-
-.icon__style_mail:hover {
-            color: #ea580c;
-} */
