@@ -53,10 +53,8 @@
 <!-- Главная картинка с заголовком и кнопкой -->
 
 			<div class="hero_background">
-				<div class="hero_main__size">
-
-						<div class="hero_size__content">
-
+				<div class="content">
+						<div>
 							<div class="hero_title">
 								<h1 class="hero_title__text_black">Стомотологическая клиника</h1>
 								<h1 class="hero_title__text_blue">Dento Plus</h1>
@@ -74,14 +72,15 @@
 
 <!-- Наши услуги: три картинки, стрелки -->
 
-				<div class="services_title__container">
+				<div class="container">
 					<h2 class="services_title" id="services">НАШИ УСЛУГИ</h2>
 				</div>
 
 				<div class="services_background">
-					<section class="services__container">
-							<div class="services__icon">
-								<i class="fa-solid fa-caret-left"></i>
+
+					<section class="services__modular_grid content">
+							<div>
+								<i class="services__icon" class="fa-solid fa-caret-left"></i>
 							</div>
 							
 							<div class="service_page-1">
@@ -115,12 +114,11 @@
 
 
 			<div class="about_us__background">
-				<main class="about_us__container">
+				<main class="content">
+					
+					<h2 class="about_us__title">О КЛИНИКЕ</h2>
+					
 					<div>
-						<h2 class="about_us__title">О КЛИНИКЕ</h2>
-					</div>
-
-					<div class="about_us__text_container">
 						<p class="about_us__text">Клиника Dentо Plus - это крупнейший стоматологический центр для взрослых и детей, ведущий свою историю с 2002 года.</p>
 					
 						<p class="about_us__text">Мы работаем для вас ежедневно, включая выходные и праздничные дни, предоставляя качественное 
@@ -128,10 +126,9 @@
 						
 						<p class="about_us__text">Мы не стоим на месте, мы постоянно развиваемся, непрерывно совершенствуем свою работу. 
 							Именно поэтому у нас так много приверженных пациентов, которые нас рекомендуют и приходят к нам семьями. Доверяя свое здоровье и здоровье ваших детей нашим специалистам.</p>
-
 					</div>
 																
-					<div>
+					<div class="about_us__button_position">
 						<button class="button_style">ПОДРОБНЕЕ</button>
 					</div>
 				</main>	
@@ -142,47 +139,60 @@
 
 <!--Отзывы. Четыре контейнера с фото-->	
 
-			<div class="reviews_background">
+			<div class="content">
 
-				<div class="reviews__title">
-					<h2 id="reviews">НАШИ ОТЗЫВЫ</h2>
-				</div>
+				<h2 class="reviews_title" id="reviews">НАШИ ОТЗЫВЫ</h2>
 
-					<div class="reviews">
+					<div class="reviews__modular_grid">
 
 						<div class="review">
-							<div class="review__image_position">
+							<div>
 								<img class="review__image" src="client-1.png"/>
 							</div>
-							<p class="review__name">Анастасия</p>
-							<p class="review__text">Хочу оставить положительный отзыв о клинике. Все сотрудники отзывчивые, доброжелательные. На просьбы пациентов реагируют оперативно. 
+
+							<div>
+								<p class="review__name">Анастасия</p>
+								<p class="review__text">Хочу оставить положительный отзыв о клинике. Все сотрудники отзывчивые, доброжелательные. На просьбы пациентов реагируют оперативно. 
 								И самое главное каждому пациенту подходят индивидуально. Прошу поощрить сотрудников в денежном виде.</p>
+							</div>
 						</div>
 
 						<div class="review">
-							<div class="review__image_position">
+							<div>
 								<img class="review__image" src="client-2.png"/>
 							</div>
-							<p class="review__name">Пётр</p>
-							<p class="review__text">Благодарю персонал за работу. Вежливые, внимательные, компетентные. 
-								Очень рад, что познакомилась с вашим медицинским центром. Всё чисто, аккуратно и максимум внимания.</p>
-						</div>
 
+							<div>
+								<p class="review__name">Пётр</p>
+								<p class="review__text">Благодарю персонал за работу. Вежливые, внимательные, компетентные. 
+								Очень рад, что познакомилась с вашим медицинским центром. Всё чисто, аккуратно и максимум внимания.</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="reviews__modular_grid">
 						<div class="review">
-							<div class="review__image_position">
+							<div>
 								<img class="review__image" src="client-3.png"/>
 							</div>
-							<p class="review__name">Иван</p>
-							<p class="review__text">Благодарю весь персонал за внимательное чуткое отношение к пациентам.</p>
+
+							<div>
+								<p class="review__name">Иван</p>
+								<p class="review__text">Благодарю весь персонал за внимательное чуткое отношение к пациентам.</p>
+							</div>
 						</div>
 
 						<div class="review">
-							<div class="review__image_position">
+							<div>
 								<img class="review__image" src="client-4.png"/>
 							</div>
-							<p class="review__name">Евгения</p>
-							<p class="review__text">Спасибо вам огромное за бережноное нежное отношение к детям. Нам очень понравилось 
+
+							<div>
+								<p class="review__name">Евгения</p>
+								<p class="review__text">Спасибо вам огромное за бережноное нежное отношение к детям. Нам очень понравилось 
 								общение с персоналом вашего центра!</p>
+							</div>
 						</div>
 					</div>
 			</div>
@@ -193,68 +203,79 @@
 <!--Отделения. Карта на фоне. 3 блока-->	
 
 			<div class="offices_background">
+				<div class="offices_background__opacity">
 
-				<div class="offices__title_position">
-					<h2 class="offices__title" id="offices">НАШИ ОТДЕЛЕНИЯ</h2>
-				</div>
+					<div class="content">
+						<h2 class="offices__title" id="offices">НАШИ ОТДЕЛЕНИЯ</h2>
+					
+						<div class="offices__modular_grid">
 
-					<div class="offices">
+							<div class="offices__branch">
+								<div class="offices_icon__position">
+									<img class="offices_image" src="location-icon.png"/>
+									<p>Санкт-Петербург, 324372, ул. Ильюшина, 5, к. 3</p>
+								</div>
 
-						<div class="offices__branch">
-							<div>
-								<img class="offices__branch_image" 1 месяц />
-								<p class="offices__branch_text">12 000 руб / 8 уроков</p>
+								<div class="offices_icon__position">
+									<img src="circle-info-icon.png" />
+									<p class="offices__branch_text_width">Режим работы:</p>
+								</div>
+								
+								<div>
+									<p class="offices__working_hours">Пн-Вс с 8:00 до 18:00 без перерывов и выходных</p>
+								</div>
+
+								<div>
+									<p class="offices_phone">+7 (823) 555-357-31</p>
+								</div>
 							</div>
 
-							<div>
-								<img class="offices__branch_image" 1 месяц />
-								<p class="offices__branch_text_width"></p>
-								<p class="offices__branch_text">12 000 руб / 8 уроков</p>
+
+
+							<div class="offices__branch">
+								<div class="offices_icon__position">
+									<img class="offices_image" src="location-icon.png"/>
+									<p>Санкт-Петербург, 324372, ул. Плюшина, 8, к. 1</p>
+								</div>
+
+								<div class="offices_icon__position">
+									<img src="circle-info-icon.png" />
+									<p class="offices__branch_text_width">Режим работы:</p>
+								</div>
+
+								<div>	
+									<p class="offices__working_hours">Пн-Вс с 8:00 до 18:00 без перерывов и выходных</p>
+								</div>
+
+								<div>
+									<p class="offices_phone">+7 (823) 555-357-32</p>
+								</div>
 							</div>
 
-							<div>
-								<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-							</div>
-						</div>
 
 
+							<div class="offices__branch">
+								<div class="offices_icon__position">
+									<img class="offices_image" src="location-icon.png"/>
+									<p>Санкт-Петербург, 324372, ул.Галюшина, 28</p>
+								</div>
 
-						<div class="offices__branch">
-							<div>
-								<img class="offices__branch_image" 1 месяц />
-								<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-							</div>
+								<div class="offices_icon__position">
+									<img src="circle-info-icon.png" />
+									<p class="offices__branch_text_width">Режим работы:</p>
+								</div>
 
-							<div>
-								<img class="offices__branch_image" 1 месяц />
-								<p class="offices__branch_text_width"></p>
-								<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-							</div>
+								<div>
+									<p class="offices__working_hours">Пн-Вс с 8:00 до 18:00 без перерывов и выходных</p>
+								</div>
 
-							<div>
-								<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-							</div>
-						</div>
-
-
-
-						<div class="offices__branch">
-							<div>
-								<img class="offices__branch_image" 1 месяц />
-								<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-							</div>
-
-							<div>
-								<img class="offices__branch_image" 1 месяц />
-								<p class="offices__branch_text_width"></p>
-								<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-							</div>
-
-							<div>
-								<p class="offices__branch_text">12 000 руб / 8 уроков</p>
+								<div>
+									<p class="offices_phone">+7 (823) 555-357-33</p>
+								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 			</div>
 
 

@@ -107,13 +107,11 @@ html, a {
 
 
 .seach {
-        width: 980px;
-        height: 63px;     
-        margin: auto;
-        margin-bottom: 100px;
-        outline: 1px solid #7dd3fc;
-        border-radius: 15px;
-        background-color: #bae6fd;
+        
+        
+        display: flex;
+        flex-direction: row;
+        
 }
 
 .seach_icon {
@@ -121,10 +119,19 @@ html, a {
         padding-right: 15px;
 }
 
+.seach__input {
+        appearance: none;
+        width: 900px;
+        height: 60px;     
+        margin: auto;
+        margin-bottom: 100px;
+        outline: 1px solid #7dd3fc;
+        border-radius: 15px;
+        background-color: #bae6fd;
 
+       
 
-
-
+}
 
 
 /* Модульная сетка (фото врачей, кнопка подробнее) */

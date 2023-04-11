@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
-  		<title> Dental Clinic </title>
+  		<title> Therapy </title>
 		<link rel="stylesheet" type ="text/css" href="reset.css"/>
-		<link rel="stylesheet" type ="text/css" href="styles.css"/>
+		<link rel="stylesheet" type ="text/css" href="styles_therapy.css"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -15,72 +15,158 @@
 
 	
 	<body>
-
+	
 <!--Навигация, хэдер-->	
 
-		<header class="header_size">
-			<div class="header_size__navigation">
-				<div>
-					<p>Dento Plus</p>	
+			<header class="header">
+				<div class="header__navigation content">
+					<div>
+						<p class="header__logo">Dento Plus</p>	
+					</div>
+					
+						<div class="navigation">
+							<nav>
+								<a class="header__link" href="#services">Услуги</a>
+							</nav>
+
+							<nav>
+								<a class="header__link" href="/therapy.html">О нас</a>
+							</nav>
+
+							<nav>
+								<a class="header__link" href="/doctors.html">Врачи</a>
+							</nav>
+
+							<nav>
+								<a class="header__link" href="#reviews">Отзывы</a>
+							</nav>
+
+							<nav>
+								<a class="header__link" href="#offices">Отделения</a>
+							</nav>
+						</div>	
 				</div>
-				
-				<div class="navigation__main">
-						<nav>
-							<a class= "navigation_link" href="#services">Услуги</a>
-						</nav>
+			</header>
 
-						<nav>
-							<a class="navigation_link" href="#about_us">О нас</a>
-						</nav>
-
-						<nav>
-							<a class="navigation_link" href="#doctors">Врачи</a>
-						</nav>
-
-						<nav>
-							<a class="navigation_link" href="#reviews">Отзывы</a>
-						</nav>
-
-						<nav>
-							<a class="navigation_link" href="#offices">Отделения</a>
-						</nav>
-				</div>	
-			</div>
-		</header>
 
 
 <!-- Главная картинка с заголовком и кнопкой -->
 
-		<div class="hero_background">
-			<div class="hero_main__size">
-
-					<div class="hero_size__content">
-
-						<div class="hero_title">
-							<h1 class="hero_title__text_black">Стомотологическая клиника</h1>
-							<h1 class="hero_title__text_blue">Dento Plus</h1>
+			<div class="hero_background">
+				<div class="content">
+						<div>
+							<div class="hero_title">
+								<h1 class="hero_title__text_black">Стомотологическая клиника</h1>
+								<h1 class="hero_title__text_blue">Dento Plus</h1>
+							</div>
+							
+							<div class="hero_text">
+								<p>Стоматологическая клиника Dentо Plus - это лучшие врачи, самое современное оборудование, инновационные технологии и материалы и индивидуальный подход!</p>
+							</div>
+							
+							<button class="button_style">ЗАПИСАТЬСЯ</button>
 						</div>
-						
-						<div class="hero_text">
-							<p>Стоматологическая клиника Dentо Plus - это лучшие врачи, самое современное оборудование, инновационные технологии и материалы и индивидуальный подход!</p>
-						</div>
-						
-						<button class="button_style">ЗАПИСАТЬСЯ</button>
-					</div>
-			</div> 
-		</div>
+				</div> 
+			</div>
 				
+
+<!-- Лечение (текст, картинка) -->
+
+			<main class="content">	
+				<h2 class="therapy_title">ЛЕЧЕНИЕ КАРИЕСА</h2>
+
+				<div class="therapy__modular_grid">	
+					<div>
+						<p class="therapy_text">На ранней стадии кариозного процесса («кариес белого пятна») повреждения лишь незначительно затрагивают эмаль. В этом случае стоматолог рекомендует процедуру реминерализации, 
+							в ходе которой проводит аппликации особого мусса или геля, насыщающие эмаль ионами фтора и кальция. В течение нескольких сеансов эмаль значительно укрепляется, что позволяет предотвратить развитие заболевания.</p>
+						
+						<p class="therapy_text">Кроме того, в клиниках МЕДИ активно используется инновационный метод лечения пораженной кариесом эмали с применением препарата Icon (Infiltration conception). 
+							После нанесения препарат плотно закрывает поврежденные кариесом поверхности, позволяя без анестезии и хирургического вмешательства затормозить процесс развития заболевания. Уникальная технология подходит в первую очередь для лечения самых юных пациентов МЕДИ, раз и навсегда избавляя ребенка от стресса, связанного с видом и звуками бормашины.</p>
+					</div>
+																	
+					<div>
+						<img class="therapy_image" src="patient.png" />
+					</div>
+				</div>
+			</main>	
+
+
+
+
+<!--Отзывы. Четыре контейнера с фото-->	
+
+			<div class="content">
+
+				<h2 class="reviews_title" id="reviews">НАШИ ОТЗЫВЫ</h2>
+
+					<div class="reviews__modular_grid">
+
+						<div class="review">
+							<div>
+								<img class="review__image" src="client-1.png"/>
+							</div>
+
+							<div>
+								<p class="review__name">Анастасия</p>
+								<p class="review__text">Хочу оставить положительный отзыв о клинике. Все сотрудники отзывчивые, доброжелательные. На просьбы пациентов реагируют оперативно. 
+								И самое главное каждому пациенту подходят индивидуально. Прошу поощрить сотрудников в денежном виде.</p>
+							</div>
+						</div>
+
+						<div class="review">
+							<div>
+								<img class="review__image" src="client-2.png"/>
+							</div>
+
+							<div>
+								<p class="review__name">Пётр</p>
+								<p class="review__text">Благодарю персонал за работу. Вежливые, внимательные, компетентные. 
+								Очень рад, что познакомилась с вашим медицинским центром. Всё чисто, аккуратно и максимум внимания.</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="reviews__modular_grid">
+						<div class="review">
+							<div>
+								<img class="review__image" src="client-3.png"/>
+							</div>
+
+							<div>
+								<p class="review__name">Иван</p>
+								<p class="review__text">Благодарю весь персонал за внимательное чуткое отношение к пациентам.</p>
+							</div>
+						</div>
+
+						<div class="review">
+							<div>
+								<img class="review__image" src="client-4.png"/>
+							</div>
+
+							<div>
+								<p class="review__name">Евгения</p>
+								<p class="review__text">Спасибо вам огромное за бережноное нежное отношение к детям. Нам очень понравилось 
+								общение с персоналом вашего центра!</p>
+							</div>
+						</div>
+					</div>
+			</div>
+
+
+
 
 <!-- Наши услуги: три картинки, стрелки -->
 
-			<div class="services_title__container">
+			<div class="container">
 				<h2 class="services_title" id="services">НАШИ УСЛУГИ</h2>
 			</div>
 
 			<div class="services_background">
-				<section class="services__container">
-						<div class="services__icon">
-							<i class="fa-solid fa-caret-left"></i>
+
+				<section class="services__modular_grid content">
+						<div>
+							<i class="services__icon" class="fa-solid fa-caret-left"></i>
 						</div>
 						
 						<div class="service_page-1">
@@ -106,384 +192,79 @@
 						</div>
 				</section>	
 			</div>
-		
+
 <!--  overflow-x: scroll;  надо применить это со-во в CSS  -->
-
-
-<!-- О клинике (описание) -->
-
-
-		<div class="about_us__background">
-			<main class="about_us__container">
-				<div>
-					<h2 class="about_us__title" id="about_us">О КЛИНИКЕ</h2>
-				</div>
-
-				<div class="about_us__text_container">
-					<p class="about_us__text">Клиника Dentо Plus - это крупнейший стоматологический центр для взрослых и детей, ведущий свою историю с 2002 года.</p>
-				
-					<p class="about_us__text">Мы работаем для вас ежедневно, включая выходные и праздничные дни, предоставляя качественное 
-						медицинское обслуживание без проволочек и очередей, комплексно и в сжатые сроки.</p>
-					
-					<p class="about_us__text">Мы не стоим на месте, мы постоянно развиваемся, непрерывно совершенствуем свою работу. 
-						Именно поэтому у нас так много приверженных пациентов, которые нас рекомендуют и приходят к нам семьями. Доверяя свое здоровье и здоровье ваших детей нашим специалистам.</p>
-
-				</div>
-															
-				<div>
-					<button class="button_style">ПОДРОБНЕЕ</button>
-				</div>
-			</main>	
-		</div>
-
-
-
-
-<!--Отзывы. Четыре контейнера с фото-->	
-
-		<div class="reviews_background">
-
-			<div class="reviews__title">
-				<h2 id="reviews">НАШИ ОТЗЫВЫ</h2>
-			</div>
-
-				<div class="reviews">
-
-					<div class="review">
-						<div class="review__image_position">
-							<img class="review__image" src="client-1.png"/>
-						</div>
-						<p class="review__name">Анастасия</p>
-						<p class="review__text">Хочу оставить положительный отзыв о клинике. Все сотрудники отзывчивые, доброжелательные. На просьбы пациентов реагируют оперативно. 
-							И самое главное каждому пациенту подходят индивидуально. Прошу поощрить сотрудников в денежном виде.</p>
-					</div>
-
-					<div class="review">
-						<div class="review__image_position">
-							<img class="review__image" src="client-2.png"/>
-						</div>
-						<p class="review__name">Пётр</p>
-						<p class="review__text">Благодарю персонал за работу. Вежливые, внимательные, компетентные. 
-							Очень рад, что познакомилась с вашим медицинским центром. Всё чисто, аккуратно и максимум внимания.</p>
-					</div>
-
-					<div class="review">
-						<div class="review__image_position">
-							<img class="review__image" src="client-3.png"/>
-						</div>
-						<p class="review__name">Иван</p>
-						<p class="review__text">Благодарю весь персонал за внимательное чуткое отношение к пациентам.</p>
-					</div>
-
-					<div class="review">
-						<div class="review__image_position">
-							<img class="review__image" src="client-4.png"/>
-						</div>
-						<p class="review__name">Евгения</p>
-						<p class="review__text">Спасибо вам огромное за бережноное нежное отношение к детям. Нам очень понравилось 
-							общение с персоналом вашего центра!</p>
-					</div>
-				</div>
-
-		</div>
-
-
-
-
-<!--Отделения. Карта на фоне. 3 блока-->	
-
-		<div class="offices_background">
-
-			<div class="offices__title_position">
-				<h2 class="offices__title" id="offices">НАШИ ОТДЕЛЕНИЯ</h2>
-			</div>
-
-				<div class="offices">
-
-					<div class="offices__branch">
-						<div>
-							<img class="offices__branch_image" 1 месяц />
-							<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-						</div>
-
-						<div>
-							<img class="offices__branch_image" 1 месяц />
-							<p class="offices__branch_text_width"></p>
-							<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-						</div>
-
-						<div>
-							<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-						</div>
-					</div>
-
-
-
-					<div class="offices__branch">
-						<div>
-							<img class="offices__branch_image" 1 месяц />
-							<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-						</div>
-
-						<div>
-							<img class="offices__branch_image" 1 месяц />
-							<p class="offices__branch_text_width"></p>
-							<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-						</div>
-
-						<div>
-							<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-						</div>
-					</div>
-
-
-
-					<div class="offices__branch">
-						<div>
-							<img class="offices__branch_image" 1 месяц />
-							<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-						</div>
-
-						<div>
-							<img class="offices__branch_image" 1 месяц />
-							<p class="offices__branch_text_width"></p>
-							<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-						</div>
-
-						<div>
-							<p class="offices__branch_text">12 000 руб / 8 уроков</p>
-						</div>
-					</div>
-				</div>
-		</div>
-
 
 
 
 <!-- Футер -->
 
-		<footer class="footer">
-			<div class="footer_size__content">
+			<footer class="footer">
+				<div class="content">
 
-				<div class="footer_size__content_logo">
-					<p class="footer_icon__phone_style">+7 (123) 456-78-90</p>
-				</div>
+			<!-- Модульная сетка -->
 
+				<div class="footer__modular_grid">
+			<!-- Левая часть -->
+					<div class="footer_section-1">
+						<div>
+							<p>2002 «Dentо Plus» - семейная стоматологическая  клиника в Санкт-Петербурге.</p>
+						</div>
 
-
-
-
-				
-						<div class="footer_icon__social-networks">
-							<div class="footer_icon__inst">
-								<i class="fa-brands fa-instagram"></i>
+						<div>
+							<div class="footer_icon__position">
+								<img src="location-icon.png"/>
+								<p class="footer__text_weight">НАШИ АДРЕСА:</p>
 							</div>
 
-							<div class="footer_icon__face">
-								<i class="fa-brands fa-facebook"></i>
-							</div>
-
-							<div class="footer_icon__twit">
-								<i class="fa-brands fa-twitter"></i>
+							<div>
+								<p>Санкт-Петербург, 324372, ул. Ильюшина, 5, к. 3</p>
+								<p>Санкт-Петербург, 324372, ул. Плюшина, 8, к. 1</p>
+								<p>Санкт-Петербург, 324372, ул.Галюшина, 28</p>
 							</div>
 						</div>
-				
-				<div>
-					<a class="icon__style_mail" href="english_house@email.com">english_house@email.com</a>
+					</div>
+
+			<!-- Средняя часть -->
+					<div class="footer_section-2">
+						<div class="footer_icon__position">
+							<img src="phone-icon.png"/>
+							<p class="footer__text_weight">НАШИ ТЕЛЕФОНЫ:</p>
+						</div>
+
+						<div>
+							<p>+7 (823) 555-357-31</p>
+							<p>+7 (823) 555-357-32</p>
+							<p>+7 (823) 555-357-33</p>
+						</div>
+					</div>
+
+			<!-- Правая часть -->
+					<div class="footer_section-3">
+						<div class="footer_icon__position">
+							<p class="footer__text_weight">Мы в соц сетях</p>
+							<img src="facebook-icon.png"/>
+						</div>
+
+						<div>	
+							<div class="footer_icon__position">
+								<img src="email-icon.png"/>
+								<p class="footer__text_weight">НАША ПОЧТА:</p>
+							</div>
+
+							<div>
+								<a class="footer_link__post" href="DentoPlus@gmail.com">DentoPlus@gmail.com</a>
+							</div>
+						</div>
+					</div>
 				</div>
 
-			</div>
-		</footer>
 
-
-
-
-
-
+			<!-- Лицензия -->
+				<div class="footer_license">
+					<p class="footer_license__text">Лицензия</p>
+					<p>Политика конфиденциальности</p>
+				</div>
+			</footer>
 	</body>
 </html>
-
-
-
-
-
-
-
-
-		
-
-
-
-<!--Поля с формой записи на урок-->
-
-		<section class="request content">
-			<div class="request_main">
-				<h2 id="lesson_entry" class="request_main__tile">Запишитесь на бесплатный урок уже сегодня</h2>
-
-				<div >
-					<p class="request_main__text">Преподаватель определит ваш уровень и Вы пройдете полноценный первый урок</p>
-				</div>
-
-					<form action="/form-submit">
-						<div class="request_main__input">
-							<div class="request_main__input_label">
-								<label for="Name">Ваше имя</label>
-								<input type="text" id="Name" name="Name"/>
-							</div>
-
-							<div class="request_main__input_label">
-								<label for="Phone">Ваш телефон</label>
-								<input type="tel" id="Phone" name="Phone"/>
-							</div>
-
-							<button class="button_style">Записаться на пробный урок</button>
-							
-						</div>
-					</form>
-			</div>
-		</section>
-
-
-<!--отзывы-->		
-		<div class="reviews_gray content">
-			<div class="reviews_field">
-
-				<div class="reviews_title">
-					<h2 id="reviews">У нас уже более 500 довольных учеников!</h2>			
-				</div>
-					<div class="reviews_content">
-						<div>
-							<p class="reviews_name">Ольга Морозова</p>
-							<p class="reviews_text">Спасибо огромное преподавателю Марине. Я замимаюсь уже 6 месяцев и это лучшая школа иностранного языка, в которой я училась.</p>			
-						</div>
-						
-						<div>
-							<p class="reviews_name">Андрей Иванов</p>
-							<p class="reviews_text">Я учил английский 10 лет с 5 класса, но так и не мог уверенно разговаривать даже на бытовые темы. 
-								Я начал учиться в вашей школе всего 4 месяца назад и сейчас я вернулся из путешествия, 
-								в котором уверенно мог общаться с таксистами, официантами и гидами. Теперь мне нестрашно путешествовать!</p>			
-						</div>
-
-						<div>
-							<p class="reviews_name">Настя Петрова</p>
-							<p class="reviews_text">Мне очень нравится методика преподавания, на уроках мы очень много общаемся и не выполняем скучных задания из учебников. 
-								Благодаря занятиям мой язык стал более живой, современный, 
-								я узнала про сленг, а на прошлой неделе познакомилась с иностранцем!</p>			
-						</div>
-					</div>
-			</div>
-		</div>
-
-<!--Стоимость абонементов. 3 блока-->
-			<div class="our_passe content">
-
-					<div>
-						<h2 class="our_passes__title" id="cost">Наши абонементы</h2>
-					</div>
-
-						<div class="our_passes__size">
-							<div class="our_passes__months">
-								<p class="our_passes__month">1 месяц</p>
-								<p class="our_passes__text">12 000 руб / 8 уроков</p>
-
-								<div class="our_passes__basic_1m">
-											<div class="our_passes__icons_leveling">
-													<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-													<p>8 уроков</p>							
-											</div>	
-											
-											<div class="our_passes__icons_leveling">
-													<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-													<p>занятия 2 раза в неделю</p>						
-											</div>
-
-											<div class="our_passes__icons_leveling">
-													<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-													<p>индивидуальный уроки</p>			
-											</div>	
-								
-
-									<button class="button_style">Записаться</button>
-								</div>
-							</div>
-						
-						<div class="our_passes__months">
-								<p class="our_passes__month">3 месяца</p>
-								<p class="our_passes__text">32 000 руб / 24 урока</p>	
-									
-								<div class="our_passes__basic_3m">
-
-
-									<div class="our_passes__icons_leveling">	
-											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-											<p>24 урока</p>					
-									</div>	
-
-
-									<div class="our_passes__icons_leveling">
-											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-											<p>занятия 2 раза в неделю</p>								
-									</div>	
-					
-
-									<div class="our_passes__icons_leveling">
-											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-											<p>индивидуальный уроки</p>				
-									</div>	
-
-									<div class="our_passes__icons_leveling">
-										<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-										<p>бесплатный разговорный клуб</p>				
-									</div>
-
-									<button class="button_style">Записаться</button>
-							</div>
-						</div>
-
-
-							<div class="our_passes__months">
-								<p class="our_passes__month">6 месяцев</p>
-								<p class="our_passes__text">55 000 руб / 58 уроков</p>	
-
-			
-								<div class="our_passes__basic_6m">
-			
-										<div class="our_passes__icons_leveling">	
-												<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-												<p>58 уроков</p>					
-										</div>	
-
-
-										<div class="our_passes__icons_leveling">
-												<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-												<p>занятия 2 раза в неделю</p>								
-										</div>	
-						
-
-										<div class="our_passes__icons_leveling">
-												<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-												<p>индивидуальный уроки</p>				
-										</div>	
-
-										<div class="our_passes__icons_leveling">
-											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-											<p>бесплатный разговорный клуб</p>				
-										</div>
-										
-										<div class="our_passes__icons_leveling">
-											<img class="our_passes__image_check" src="check_icon_green.svg"/>							
-											<p>бесплатная заморозка абонимента</p>				
-										</div>
-									
-										<button class="button_style">Записаться</button>
-								</div>
-							</div>
-						</div>
-
-			</div>
-
-			
-			
-			
-
-				

@@ -149,6 +149,118 @@ html, a {
 }
 
 
+
+/* Лечение (текст, картинка) */
+
+
+.therapy_title {
+        font-weight: 700;
+        font-size: 48px;
+        text-align: left;
+        color: #0369A1;
+        padding-top: 100px;
+        padding-bottom: 20px;
+}
+
+
+.therapy__modular_grid {
+        display: flex;
+        display: row;
+        justify-content: space-between;
+        gap: 10px;
+        /* width: calc(100%-10px/2); */
+}
+
+.therapy_text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: justify;
+        color: #0B4269;
+        padding-top: 15px;
+        width: 60%;
+}
+
+
+.therapy_image {
+        border-radius: 10px;
+        /* object-fit: cover; */
+        width: 40%;
+
+}
+
+
+
+
+
+
+
+/* Отзывы. Четыре контейнера с фото */
+
+.reviews_title {
+        font-weight: 700;
+        font-size: 40px;
+        color: #0369A1;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+}
+
+.reviews__modular_grid {
+        display: flex;
+        display: row;
+        justify-content: space-between;
+        gap: 10px;
+        width: calc(100%-10px/2);
+}
+
+.review {
+        border: 1px solid #E5E5E5;
+        border-radius: 20px;
+        width: 50%;
+        display: flex;
+        display: row;
+        gap: 10px;
+        margin-bottom: 50px;
+        box-shadow: 0px 5px 15px #d4d4d4;
+}
+
+.review__image {
+        margin: 10px;
+}
+
+
+.review__name {
+        font-weight: 700;
+        font-size: 24px;
+        color: #0284C7;
+}
+
+
+.review__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #737373;
+}
+
+@media (max-width: 600px) { 
+    .reviews__modular_grid {
+        flex-direction: column;
+    }
+
+    .review {
+        width: 100%;
+}
+}
+
+
+
+
+
+
+
+
 /* Наши услуги: три картинки, стрелки */
 
 .services_title {
@@ -217,188 +329,6 @@ html, a {
 
 
 
-
-/* О клинике (описание) */
-
-.about_us__background {
-        background: url(background-1.png);
-        height: 700px;
-        background-size: cover;
-        background-position: center top;
-}
-
-.about_us__title {
-        font-weight: 700;
-        font-size: 40px;
-        text-align: center;
-        color: #0C4A6E;
-        padding-top: 60px;
-        padding-bottom: 20px;
-}
-
-
-.about_us__text {
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
-        text-align: justify;
-        color: #171717;
-        padding-top: 20px;
-        padding-bottom: 20px;
-}
-
-
-.about_us__button_position {
-        text-align: right;
-}
-
-@media (max-width: 600px) {
-    .about_us__background {
-        height: 800px;
-}
-}
-
-
-/* Отзывы. Четыре контейнера с фото */
-
-.reviews_title {
-        font-weight: 700;
-        font-size: 40px;
-        color: #0369A1;
-        text-align: center;
-        padding-top: 100px;
-        padding-bottom: 50px;
-}
-
-.reviews__modular_grid {
-        display: flex;
-        display: row;
-        justify-content: space-between;
-        gap: 10px;
-        width: calc(100%-10px/2);
-}
-
-.review {
-        border: 1px solid #E5E5E5;
-        border-radius: 20px;
-        width: 50%;
-        display: flex;
-        display: row;
-        gap: 10px;
-        margin-bottom: 50px;
-        box-shadow: 0px 5px 15px #d4d4d4;
-}
-
-.review__image {
-        margin: 10px;
-}
-
-
-.review__name {
-        font-weight: 700;
-        font-size: 24px;
-        color: #0284C7;
-}
-
-
-.review__text {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 19px;
-        color: #737373;
-}
-
-@media (max-width: 600px) { 
-    .reviews__modular_grid {
-        flex-direction: column;
-    }
-
-    .review {
-        width: 100%;
-}
-}
-
-
-/* Отделения. Карта на фоне. 3 блока */
-
-
-.offices_background {
-        background: url(map-background.png);
-        height: 400px;
-        background-size: cover;
-        background-position: center top;
-        position: relative;
-}
-
-/* прозрачность фона */
-
-.offices_background__opacity {
-        position: absolute;
-        height: 400px;
-        width: 100%;
-        background-color: rgb(250, 250, 250, 0.5);
-}
-
-
-.offices__title {
-        font-weight: 700;
-        font-size: 40px;
-        text-align: center;
-        color: #0369A1;
-        padding-top: 50px;
-        padding-bottom: 40px;
-
-}
-
-.offices__modular_grid {
-        display: flex;
-        display: row;
-        justify-content: space-between;
-        gap: 10px;
-        width: calc(100%-10px*2/3);
-}
-
-/* Контиейнер с инф-ей */
-
-.offices__branch {
-        border: 1px solid #0c4a6e;
-        border-radius: 20px;
-        background-color: #fafafa;
-        width: (100%/3);
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-        color: #075985;
-        font-size: 19px;
-        font-weight:500;
-}
-
-.offices_icon__position {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-}
-
-.offices_image {
-        height: 30px;
-        width: 30px;
-}
-
-
-.offices__branch_text_width {
-        font-weight: 700;
-}
-
-.offices__working_hours {
-        padding-left: 30px;
-}
-
-.offices_phone {
-        padding-left: 30px;
-        font-weight: 700;
-}
 
 
 /* Футер (модульные сетки)*/
