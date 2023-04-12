@@ -56,6 +56,7 @@ html, a {
         font-weight: 600;
         font-size: 22px;
         color: #fafafa; 
+        
 }
 
 
@@ -67,15 +68,32 @@ html, a {
         color: #404040;
 }
 
+
 @media (max-width: 600px) { 
-    .header__navigation {
-        flex-wrap: wrap;      
-}
-    .header {
-        height: 80px;
-}
+        .header {
+                height: 80px;
+        }
+        .header__navigation {
+                flex-wrap: wrap;     
+        }
+        .navigation {
+               padding-top: 10px;
+        }
 }
 
+@media (max-width: 375px) { 
+        .header {
+                height: 80px;
+            }
+        .header__navigation {
+                flex-wrap: wrap;      
+        }
+        
+        .header__link {     
+                font-weight: 500;
+                font-size: 13px;
+        }
+}
 
 
 /* Главная картинка с заголовком и кнопкой. Фоновая картинка */
@@ -92,14 +110,19 @@ html, a {
 .hero_title {
         font-weight: 700;
         font-size: 60px;
-        width: 50%;
+        width: 100%;
         margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
 }
 
 
 .hero_title__text_black {
         color: #171717;
+        padding-right: 5px;
 }
+
 
 .hero_title__text_blue {
         color: #0284c7;
@@ -111,19 +134,28 @@ html, a {
         padding-bottom: 50px;
         font-weight: 400;
         font-size: 20px;
-        line-height: 25px;
+        line-height: 130%;
         color: #075985;
 }
 
 
 @media (max-width: 600px) {
-
-.hero_title {
-        font-weight: 600;
-        font-size: 50px;
+        .hero_title {
+                font-weight: 600;
+                font-size: 50px;
 }
 }
 
+@media (max-width: 375px) {
+        .hero_title {
+                font-weight: 600;
+                font-size: 36px;
+}
+        .hero_text {
+                width: 80%;
+                padding-bottom: 30px;
+}
+}
 
 
 .button_style {
@@ -149,7 +181,8 @@ html, a {
 }
 
 
-/* Наши услуги: три картинки, стрелки */
+
+/* Наши услуги: три картинки со стрелками */
 
 .services_title {
         font-weight: 700;
@@ -163,24 +196,17 @@ html, a {
 .services_background {
         background-color: #0284C7;
         height: 300px;
+        box-shadow: 0px 4px 15px #a3a3a3;
 }
 
 .services__modular_grid {
         display: flex;
-        display: row;
+        flex-direction: row;
         justify-content: space-between;
         gap: 10px;
-        width: calc(100%-10px*4/5);
+        width: calc(100%-10px*2/3);
 }
 
-/* .services__icon {
-        width: 85px;
-        height: 35px;
-                
-        background: #E0F2FE;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
-} */
 
 .service_page-1 {
         background: url(service-1.png);
@@ -190,7 +216,6 @@ html, a {
         background-position: center top;
         border-radius: 10px;
         margin-top: 50px;
-
 }
 
 .service_page-2 {
@@ -201,7 +226,6 @@ html, a {
         background-position: center top;
         border-radius: 10px;
         margin-top: 50px;
-
 }
 
 .service_page-3 {
@@ -212,9 +236,73 @@ html, a {
         background-position: center top;
         border-radius: 10px;
         margin-top: 50px;
-
 }
 
+@media (max-width: 600px) {
+        .services_background {
+                height: 900px;
+        }        
+        .services__modular_grid {
+                flex-direction: column;
+        }
+        .service_page-1 {
+                width: 100%;
+        }
+        .service_page-2 {
+                width: 100%;
+        }
+        .service_page-3 {
+                width: 100%;
+        }
+}
+
+@media (max-width: 375px) {
+        .services_background {
+                height: 900px;
+        }        
+        .services__modular_grid {
+                flex-direction: column;
+        }
+        .service_page-1 {
+                width: 100%;
+        }
+        .service_page-2 {
+                width: 100%;
+        }
+        .service_page-3 {
+                width: 100%;
+        }
+}
+
+.service_page__number {
+        position: absolute;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-family: 'Playfair Display';
+        font-style: oblique;
+        font-size: 24px;
+        color: #525252;
+        font-weight: 500;
+}
+
+.service_page__container_text {
+        padding-top: 150px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #262626;
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+}
+
+.service_page__icone {
+        color: #262626;
+        font-size: 40px;
+}
 
 
 
@@ -253,10 +341,24 @@ html, a {
 }
 
 @media (max-width: 600px) {
-    .about_us__background {
-        height: 800px;
+        .about_us__background {
+                height: 800px;
+}
+        .about_us__text {
+                text-align: center;
 }
 }
+
+
+@media (max-width: 375px) {
+        .about_us__background {
+                height: 1000px;
+}
+        .about_us__text {
+                text-align: center;
+}
+}
+
 
 
 /* Отзывы. Четыре контейнера с фото */
@@ -309,12 +411,12 @@ html, a {
 }
 
 @media (max-width: 600px) { 
-    .reviews__modular_grid {
-        flex-direction: column;
-    }
+        .reviews__modular_grid {
+                flex-direction: column;
+        }
 
-    .review {
-        width: 100%;
+        .review {
+                width: 100%;
 }
 }
 
@@ -337,7 +439,7 @@ html, a {
         height: 400px;
         width: 100%;
         background-color: rgb(250, 250, 250, 0.5);
-}
+} 
 
 
 .offices__title {
@@ -352,11 +454,12 @@ html, a {
 
 .offices__modular_grid {
         display: flex;
-        display: row;
+        flex-direction: row;
         justify-content: space-between;
         gap: 10px;
         width: calc(100%-10px*2/3);
 }
+
 
 /* Контиейнер с инф-ей */
 
@@ -399,6 +502,36 @@ html, a {
         padding-left: 30px;
         font-weight: 700;
 }
+
+
+@media (max-width: 600px) {
+        .offices_background {
+                height: 800px;
+        }        
+        .offices_background__opacity {
+                height: 800px;
+        } 
+        .offices__modular_grid {
+                flex-direction: column;
+                width: 100%;
+        }
+}
+
+
+@media (max-width: 375px) {
+        .offices_background {
+                height: 900px;
+        }        
+        .offices_background__opacity {
+                height: 900px;
+        } 
+        .offices__modular_grid {
+                flex-direction: column;
+                width: 100%;
+        }
+}
+
+
 
 
 /* Футер (модульные сетки)*/
@@ -492,20 +625,29 @@ html, a {
 
 
 @media (max-width: 600px) {      
-    .footer__modular_grid {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-    }
-    .footer_section-1 {
-            width: 100%;
-    }
+        .footer__modular_grid {
+                flex-direction: column;
+                gap: 30px;
+        }
+        .footer_section-1 {
+                width: 100%;
+                font-size: 14px;
+        }
+        .footer_section-2 {
+                width: 100%;
+        }
+        .footer_section-3 {
+                width: 100%;
+                gap: 20px;
+        }
+}
 
-    .footer_section-2 {
-            width: 100%;
-    }
-
-    .footer_section-3 {
-            width: 100%;
-    }
+@media (max-width: 375px) { 
+        .footer_section-1 {
+                font-size: 16px;
+                
+        }
+        .footer_license {
+                font-size: 14px;
+        }
 }

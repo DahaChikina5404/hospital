@@ -152,9 +152,14 @@ html, a {
         margin-bottom: 100px;
         padding-left: 70px;
         appearance: none;
-        outline: 1px solid #7dd3fc;
+        border: none;
+        outline-color: #0c4a6e;
         border-radius: 15px;
         background-color: #bae6fd;
+}
+
+.seach_input:focus {
+        background-color: #7dd3fc;
 }
 
 
@@ -320,7 +325,6 @@ html, a {
 
 @media (max-width: 600px) {      
         .footer__modular_grid {
-                display: flex;
                 flex-direction: column;
                 gap: 30px;
         }
