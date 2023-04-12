@@ -541,6 +541,17 @@ html, a {
     border-right: 2px solid #075985;
 }
 
+/* Кнопка ВВЕРХ */
+
+.scroll_up {
+        font-size: 40px;
+        color: #0c4a6e;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+   
+}
+
 
 @media (max-width: 600px) {      
         .footer__modular_grid {
