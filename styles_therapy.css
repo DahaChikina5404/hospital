@@ -12,6 +12,8 @@ html, a {
 .content {
         max-width: 1024px;
         margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
 }
 
 
@@ -80,7 +82,7 @@ html, a {
         }
 }
 
-@media (max-width: 375px) { 
+@media (max-width: 400px) {
         .header {
                 height: 80px;
             }
@@ -122,6 +124,7 @@ html, a {
         padding-right: 5px;
 }
 
+
 .hero_title__text_blue {
         color: #0284c7;
 }
@@ -132,7 +135,7 @@ html, a {
         padding-bottom: 50px;
         font-weight: 400;
         font-size: 20px;
-        line-height: 25px;
+        line-height: 130%;
         color: #075985;
 }
 
@@ -144,7 +147,7 @@ html, a {
 }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
         .hero_title {
                 font-weight: 600;
                 font-size: 36px;
@@ -208,9 +211,6 @@ html, a {
         color: #0B4269;
 }
 
-.therapy_text__padding {
-        padding-bottom: 15px;
-}
 
 .therapy_image {        
         border-radius: 10px;
@@ -298,30 +298,34 @@ html, a {
                 padding-left: 20px;
         }
         .price__text_dark {
-                font-size: 12px;
+                font-size: 16px;
                 font-weight: 600;
         }
         .price__text_green {
-                font-size: 12px;
+                font-size: 16px;
                 font-weight: 600;
         }
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
         .price__blue {
                 padding-left: 10px;
+                flex-wrap: nowrap;
         }
         .price__deep_blue {
                 padding-left: 10px;
+                flex-wrap: nowrap;
         }
         .price__text_dark {
-                font-size: 12px;
+                font-size: 10px;
                 font-weight: 600;
+                padding-right: 1px;
         }
         .price__text_green {
-                font-size: 12px;
+                font-size: 10px;
                 font-weight: 600;
+                padding-right: 2px;
         }
 }
 
@@ -402,7 +406,7 @@ html, a {
         }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
         .services_background {
                 height: 900px;
         }        
@@ -541,14 +545,16 @@ html, a {
     border-right: 2px solid #075985;
 }
 
+
+
 /* Кнопка ВВЕРХ */
 
 .scroll_up {
-        font-size: 40px;
+        font-size: 50px;
         color: #0c4a6e;
         position: fixed;
-        right: 20px;
-        bottom: 20px;
+        right: 30px;
+        bottom: 30px;
    
 }
 
@@ -569,14 +575,20 @@ html, a {
                 width: 100%;
                 gap: 20px;
         }
+        .scroll_up {
+                font-size: 40px; 
+        }
 }
 
-@media (max-width: 375px) { 
+@media (max-width: 400px) { 
         .footer_section-1 {
                 font-size: 16px;
                 
         }
         .footer_license {
                 font-size: 14px;
+        }
+        .scroll_up {
+                font-size: 40px; 
         }
 }

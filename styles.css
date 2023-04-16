@@ -12,6 +12,8 @@ html, a {
 .content {
         max-width: 1024px;
         margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
 }
 
 
@@ -81,7 +83,7 @@ html, a {
         }
 }
 
-@media (max-width: 375px) { 
+@media (max-width: 400px) {
         .header {
                 height: 80px;
             }
@@ -146,7 +148,7 @@ html, a {
 }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
         .hero_title {
                 font-weight: 600;
                 font-size: 36px;
@@ -183,6 +185,7 @@ html, a {
 
 
 /* Наши услуги: три картинки со стрелками */
+
 
 .services_title {
         font-weight: 700;
@@ -256,7 +259,7 @@ html, a {
         }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
         .services_background {
                 height: 900px;
         }        
@@ -350,7 +353,7 @@ html, a {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
         .about_us__background {
                 height: 1000px;
 }
@@ -518,7 +521,7 @@ html, a {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
         .offices_background {
                 height: 900px;
         }        
@@ -627,12 +630,11 @@ html, a {
 /* Кнопка ВВЕРХ */
 
 .scroll_up {
-     font-size: 40px;
+     font-size: 50px;
      color: #0c4a6e;
      position: fixed;
-     right: 20px;
-     bottom: 20px;
-
+     right: 30px;
+     bottom: 30px;
 }
 
 @media (max-width: 600px) {      
@@ -653,7 +655,7 @@ html, a {
         }
 }
 
-@media (max-width: 375px) { 
+@media (max-width: 400px) {
         .footer_section-1 {
                 font-size: 16px;
                 

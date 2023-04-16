@@ -12,6 +12,8 @@ html, a {
 .content {
         max-width: 1024px;
         margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
 }
 
 
@@ -80,7 +82,7 @@ html, a {
         }
 }
 
-@media (max-width: 375px) { 
+@media (max-width: 400px) { 
         .header {
                 height: 80px;
             }
@@ -119,7 +121,7 @@ html, a {
 
 
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
         .hero_description__title {
             font-size: 40px;
             line-height: 130%;
@@ -326,11 +328,11 @@ html, a {
 /* Кнопка ВВЕРХ */
 
 .scroll_up {
-        font-size: 40px;
+        font-size: 50px;
         color: #0c4a6e;
         position: fixed;
-        right: 20px;
-        bottom: 20px;
+        right: 30px;
+        bottom: 30px;
    
 }
 
@@ -351,14 +353,20 @@ html, a {
                 width: 100%;
                 gap: 20px;
         }
+        .scroll_up {
+                font-size: 40px; 
+        }
 }
 
-@media (max-width: 375px) { 
+@media (max-width: 400px) {
         .footer_section-1 {
                 font-size: 16px;
                 
         }
         .footer_license {
                 font-size: 14px;
+        }
+        .scroll_up {
+                font-size: 40px; 
         }
 }
