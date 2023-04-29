@@ -21,7 +21,8 @@ html, a {
 
 .header {
         position: sticky;
-        height: 60px;
+        padding-top: 15px;
+        padding-bottom: 20px;
         top: 0px;
         background-color: #0284C7;
         box-shadow: 0px 4px 15px #d4d4d4;
@@ -72,9 +73,6 @@ html, a {
 
 
 @media (max-width: 600px) { 
-        .header {
-                height: 80px;
-        }
         .header__navigation {
                 flex-wrap: wrap;     
         }
@@ -83,10 +81,18 @@ html, a {
         }
 }
 
-@media (max-width: 400px) {
-        .header {
-                height: 80px;
-            }
+@media (max-width: 420px) {
+        .header__navigation {
+                flex-wrap: wrap;      
+        }
+        
+        .header__link {     
+                font-weight: 500;
+                font-size: 13px;
+        }
+}
+
+@media (max-width: 390px) {
         .header__navigation {
                 flex-wrap: wrap;      
         }
@@ -101,11 +107,11 @@ html, a {
 /* Главная картинка с заголовком и кнопкой. Фоновая картинка */
 
 .hero_background {
-        background: url(hero.png);
-        height: 700px;
+        background: url(/image/hero.png);
+        padding-top: 50px;
+        padding-bottom: 100px;
         background-size: cover;
         background-position: center top;
-        padding-top: 20px;
 }
 
 
@@ -113,7 +119,6 @@ html, a {
         font-weight: 700;
         font-size: 60px;
         width: 100%;
-        margin-top: 100px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -148,7 +153,7 @@ html, a {
 }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
         .hero_title {
                 font-weight: 600;
                 font-size: 36px;
@@ -159,6 +164,16 @@ html, a {
 }
 }
 
+@media (max-width: 390px) {
+        .hero_title {
+                font-weight: 600;
+                font-size: 36px;
+}
+        .hero_text {
+                width: 80%;
+                padding-bottom: 30px;
+}
+}
 
 .button_style {
         font-weight: 700;
@@ -178,8 +193,7 @@ html, a {
 
 .button_style:hover {
         color:#075985;
-        background-color: #fafafa;
-        border: 1px solid #075985;
+        background-color: #bae6fd;
 }
 
 
@@ -198,7 +212,8 @@ html, a {
 
 .services_background {
         background-color: #0284C7;
-        height: 300px;
+        padding-top: 50px;
+        padding-bottom: 40px;
         box-shadow: 0px 4px 15px #a3a3a3;
 }
 
@@ -206,76 +221,54 @@ html, a {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 10px;
-        width: calc(100%-10px*2/3);
+        gap: 30px;
+        width: calc(100%-30px*2/3);
 }
 
 
 .service_page-1 {
-        background: url(service-1.png);
+        background: url(/image/service-1.png);
         height: 200px;
         width: 290px;
         background-size: cover;
         background-position: center top;
+        position: relative;
         border-radius: 10px;
-        margin-top: 50px;
 }
+
 
 .service_page-2 {
-        background: url(service-2.png);
+        background: url(/image/service-2.png);
         height: 200px;
         width: 290px;
         background-size: cover;
         background-position: center top;
+        position: relative;
         border-radius: 10px;
-        margin-top: 50px;
 }
+
 
 .service_page-3 {
-        background: url(service-3.png);
+        background: url(/image/service-3.png);
         height: 200px;
         width: 290px;
         background-size: cover;
         background-position: center top;
+        position: relative;
         border-radius: 10px;
-        margin-top: 50px;
 }
 
-@media (max-width: 600px) {
-        .services_background {
-                height: 900px;
-        }        
-        .services__modular_grid {
-                flex-direction: column;
-        }
-        .service_page-1 {
-                width: 100%;
-        }
-        .service_page-2 {
-                width: 100%;
-        }
-        .service_page-3 {
-                width: 100%;
-        }
-}
 
-@media (max-width: 400px) {
-        .services_background {
-                height: 900px;
-        }        
-        .services__modular_grid {
-                flex-direction: column;
-        }
-        .service_page-1 {
-                width: 100%;
-        }
-        .service_page-2 {
-                width: 100%;
-        }
-        .service_page-3 {
-                width: 100%;
-        }
-}
+/* прозрачность фона, градиент */
+
+.service_page__opacity {
+        position: absolute;
+        height: 200px;
+        width: 290px;
+        border-radius: 10px;
+        background: linear-gradient(to right, #fafafa 0%, #4598C7 14%, transparent 45%);
+} 
+
 
 .service_page__number {
         position: absolute;
@@ -284,7 +277,7 @@ html, a {
         font-family: 'Playfair Display';
         font-style: oblique;
         font-size: 24px;
-        color: #525252;
+        color: #fafafa;
         font-weight: 500;
 }
 
@@ -292,7 +285,7 @@ html, a {
         padding-top: 150px;
         padding-left: 20px;
         padding-right: 20px;
-        color: #262626;
+        color: #525252;
         font-size: 20px;
         font-weight: 500;
         display: flex;
@@ -303,17 +296,75 @@ html, a {
 }
 
 .service_page__icone {
-        color: #262626;
+        color: #525252;
         font-size: 40px;
 }
+
+
+
+@media (max-width: 600px) {       
+        .services__modular_grid {
+                flex-direction: column;
+        }
+        .service_page-1 {
+                width: 100%;
+        }
+        .service_page-2 {
+                width: 100%;
+        }
+        .service_page-3 {
+                width: 100%;
+        }
+        .service_page__opacity {
+                width: 100%;
+        }
+}
+
+@media (max-width: 420px) {       
+        .services__modular_grid {
+                flex-direction: column;
+        }
+        .service_page-1 {
+                width: 100%;
+        }
+        .service_page-2 {
+                width: 100%;
+        }
+        .service_page-3 {
+                width: 100%;
+        }
+        .service_page__opacity {
+                width: 100%;
+        }
+}
+
+@media (max-width: 390px) {        
+        .services__modular_grid {
+                flex-direction: column;
+        }
+        .service_page-1 {
+                width: 100%;
+        }
+        .service_page-2 {
+                width: 100%;
+        }
+        .service_page-3 {
+                width: 100%;
+        }
+        .service_page__opacity {
+                width: 100%;
+        }
+}
+
 
 
 
 /* О клинике (описание) */
 
 .about_us__background {
-        background: url(background-1.png);
-        height: 700px;
+        background: url(/image/background-1.png);
+        padding-top: 30px;
+        padding-bottom: 30px;
         background-size: cover;
         background-position: center top;
 }
@@ -344,24 +395,22 @@ html, a {
 }
 
 @media (max-width: 600px) {
-        .about_us__background {
-                height: 800px;
-}
         .about_us__text {
                 text-align: center;
 }
 }
 
-
-@media (max-width: 400px) {
-        .about_us__background {
-                height: 1000px;
-}
+@media (max-width: 420px) {
         .about_us__text {
                 text-align: center;
 }
 }
 
+@media (max-width: 390px) {
+        .about_us__text {
+                text-align: center;
+}
+}
 
 
 /* Отзывы. Четыре контейнера с фото */
@@ -428,7 +477,7 @@ html, a {
 
 
 .offices_background {
-        background: url(map-background.png);
+        background: url(/image/map-background.png);
         height: 400px;
         background-size: cover;
         background-position: center top;
@@ -441,7 +490,7 @@ html, a {
         position: absolute;
         height: 400px;
         width: 100%;
-        background-color: rgb(250, 250, 250, 0.5);
+        background-color: rgb(245, 245, 245, 0.7);
 } 
 
 
@@ -520,8 +569,20 @@ html, a {
         }
 }
 
+@media (max-width: 420px) {
+        .offices_background {
+                height: 900px;
+        }        
+        .offices_background__opacity {
+                height: 900px;
+        } 
+        .offices__modular_grid {
+                flex-direction: column;
+                width: 100%;
+        }
+}
 
-@media (max-width: 400px) {
+@media (max-width: 390px) {
         .offices_background {
                 height: 900px;
         }        
@@ -655,7 +716,7 @@ html, a {
         }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
         .footer_section-1 {
                 font-size: 16px;
                 
@@ -665,3 +726,12 @@ html, a {
         }
 }
 
+@media (max-width: 390px) {
+        .footer_section-1 {
+                font-size: 16px;
+                
+        }
+        .footer_license {
+                font-size: 14px;
+        }
+}

@@ -21,7 +21,8 @@ html, a {
 
 .header {
         position: sticky;
-        height: 60px;
+        padding-top: 15px;
+        padding-bottom: 20px;
         top: 0px;
         background-color: #0284C7;
         box-shadow: 0px 4px 15px #d4d4d4;
@@ -71,21 +72,26 @@ html, a {
 
 
 @media (max-width: 600px) { 
-        .header {
-                height: 80px;
-        }
         .header__navigation {
-                flex-wrap: wrap;     
+               flex-wrap: wrap;     
         }
         .navigation {
                padding-top: 10px;
         }
 }
 
-@media (max-width: 400px) { 
-        .header {
-                height: 80px;
-            }
+@media (max-width: 420px) {
+        .header__navigation {
+                flex-wrap: wrap;      
+        }
+        
+        .header__link {     
+                font-weight: 500;
+                font-size: 13px;
+        }
+}
+
+@media (max-width: 390px) {
         .header__navigation {
                 flex-wrap: wrap;      
         }
@@ -120,8 +126,17 @@ html, a {
 }
 
 
+@media (max-width: 420px) {
+        .hero_description__title {
+            font-size: 40px;
+            line-height: 130%;
+        }
+        .hero_description__content {
+            font-size: 22px;
+        }
+}
 
-@media (max-width: 400px) {
+@media (max-width: 390px) {
         .hero_description__title {
             font-size: 40px;
             line-height: 130%;
@@ -214,12 +229,12 @@ html, a {
 .doctor__button_style {
         font-weight: 700;
         font-size: 18px;            
-        color: #0284C7;
-        background-color: #fafafa;
+        color: #fafafa;
+        border: none;
         border-radius: 10px;
-        border: 1px solid #0284C7;
-        margin-top: 10px;
-        margin-bottom: 50px;
+        background-color: #0284C7;
+        margin-top: 20px;
+        margin-bottom: 30px;
         padding: 15px;
         width: 300px;
         cursor: pointer;
@@ -227,9 +242,9 @@ html, a {
 }
 
 
-.doctor__button_style:hover {
-        color: #fafafa;
-        background-color: #075985;
+.doctor__button_style:hover{
+        color:#075985;
+        background-color: #bae6fd;
 }
 
 
@@ -358,7 +373,20 @@ html, a {
         }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) { 
+        .footer_section-1 {
+                font-size: 16px;
+                
+        }
+        .footer_license {
+                font-size: 14px;
+        }
+        .scroll_up {
+                font-size: 40px; 
+        }
+}
+
+@media (max-width: 390px) {
         .footer_section-1 {
                 font-size: 16px;
                 
