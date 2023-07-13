@@ -21,30 +21,61 @@
 			<header class="header">
 				<div class="header__navigation content">
 					<div>
-						<p class="header__logo">Dento Plus</p>	
+						<a class="header__logo" href="/index.html#home_page">Dento Plus</a>	
 					</div>
-					
-						<div class="navigation">
-							<nav>
-								<a class="header__link" href="/index.html#services" target="_blank">Услуги</a>
-							</nav>
+		
 
-							<nav>
-								<a class="header__link" href="/therapy.html" target="_blank">О нас</a>
-							</nav>
+<!-- Десктопное меню -->
 
-							<nav>
-								<a class="header__link" href="/doctors.html">Врачи</a>
-							</nav>
+			<div class="navigation">
+				<nav>
+					<a class="header__link" href="/index.html#services">Услуги</a>
+				</nav>
 
-							<nav>
-								<a class="header__link" href="/index.html#reviews" target="_blank">Отзывы</a>
-							</nav>
+				<nav>
+					<a class="header__link" href="/therapy.html">О нас</a>
+				</nav>
 
-							<nav>
-								<a class="header__link" href="/index.html#offices" target="_blank">Отделения</a>
-							</nav>
-						</div>	
+				<nav>
+					<a class="header__link" href="/doctors.html">Врачи</a>
+				</nav>
+
+				<nav>
+					<a class="header__link" href="/index.html#reviews">Отзывы</a>
+				</nav>
+
+				<nav>
+					<a class="header__link" href="/index.html#offices">Отделения</a>
+				</nav>
+			</div>
+
+<!-- Мобильное меню -->
+
+					<i class="fa-solid fa-bars" id="header_menu__mobile_burger" onclick="openMenu()"></i>
+					<i class="fa-solid fa-xmark" id="header_menu__mobile_close" onclick="openMenu()"></i>
+
+				</div>
+
+				<div class="contex_menu content" id="myMenu">	
+					<nav>
+						<a class="header__link" href="/index.html#services">Услуги</a>
+					</nav>
+
+					<nav>
+						<a class="header__link" href="/therapy.html">О нас</a>
+					</nav>
+
+					<nav>
+						<a class="header__link" href="/doctors.html">Врачи</a>
+					</nav>
+
+					<nav>
+						<a class="header__link" href="/index.html#reviews">Отзывы</a>
+					</nav>
+
+					<nav>
+						<a class="header__link" href="/index.html#offices">Отделения</a>
+					</nav>
 				</div>
 			</header>
 
@@ -276,5 +307,7 @@
 <!-- Кнопка ВВЕРХ -->
 
 			<a class="scroll_up content" href="#hero"><i class="fa-regular fa-circle-up"></i></a>
+
+		<script src="script.js"></script>
 	</body>
 </html>

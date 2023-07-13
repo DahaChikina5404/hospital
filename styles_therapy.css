@@ -1,12 +1,12 @@
 * {
         box-sizing: border-box;
+        scroll-behavior: smooth;
 }
 
 
 html, a {
         font-family: 'Open Sans', sans-serif;
         text-decoration: none;
-        scroll-behavior: smooth;
 }
 
 .content {
@@ -22,7 +22,7 @@ html, a {
 .header {
         position: sticky;
         padding-top: 15px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         top: 0px;
         background-color: #0284C7;
         box-shadow: 0px 4px 15px #d4d4d4;
@@ -45,13 +45,41 @@ html, a {
         color: #fafafa;  
 }
 
-/* выравнивание ссылок */
 
+/* иконка для вызова мобильного меню (бургер) */
+
+#header_menu__mobile_burger {
+        display: none;
+        font-size: 36px;
+        color: #fafafa;
+}
+
+
+#header_menu__mobile_close {
+        display: none;
+        font-size: 36px;
+        color: #fafafa;
+}
+
+/* выравнивание ссылок */
 
 .navigation {
         display: flex;
         gap: 30px;
 }
+
+
+/* Выпадающее мобильное меню */
+
+.contex_menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding-top: 30px;
+}
+
+
 
 /* Свойства ссылок*/
 
@@ -66,39 +94,32 @@ html, a {
         color: #38bdf8;
 }
 
-.header__link:visited {
-        color: #404040;
-}
 
 
-@media (max-width: 600px) { 
-        .header__navigation {
-               flex-wrap: wrap;     
-        }
+@media (max-width: 768px) { 
         .navigation {
-               padding-top: 10px;
+                display: none;
+        }
+        #header_menu__mobile_burger {
+                display: flex;
         }
 }
 
 @media (max-width: 420px) {
-        .header__navigation {
-                flex-wrap: wrap;      
+        .navigation {
+                display: none;
         }
-        
-        .header__link {     
-                font-weight: 500;
-                font-size: 13px;
+        #header_menu__mobile_burger {
+                display: flex;
         }
 }
 
 @media (max-width: 390px) {
-        .header__navigation {
-                flex-wrap: wrap;      
+        .navigation {
+                display: none;
         }
-        
-        .header__link {     
-                font-weight: 500;
-                font-size: 13px;
+        #header_menu__mobile_burger {
+                display: flex;
         }
 }
 
@@ -145,7 +166,7 @@ html, a {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
         .hero_title {
                 font-weight: 600;
                 font-size: 50px;
@@ -232,7 +253,7 @@ html, a {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
         .therapy__modular_grid {
                 flex-direction: column;
         }
@@ -265,12 +286,9 @@ html, a {
         width: 100%;
         padding: 20px;
         border: none;
-        background-color: #f0f9ff;
+        background-color: #d4eaf8;
         border-radius: 20px;
         margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
 }
 
 
@@ -281,27 +299,24 @@ html, a {
         background-color: #f0f9ff;
         border-radius: 20px;
         margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
 }
 
 .price__text_dark {
         font-size: 20px;
         font-weight: 700;
         color: #0c4a6e;
-        padding-right: 5px;
 }
 
 .price__text_green {
         font-size: 20px;
         font-weight: 700;
         color: #26992A;
-        padding-right: 5px;
+        padding-left: 3px;
+        padding-right: 3px;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
         .price__text_dark {
                 font-size: 14px;
                 font-weight: 600;
@@ -315,25 +330,25 @@ html, a {
 @media (max-width: 420px) {
         .price__text_dark {
                 font-size: 12px;
-                font-weight: 600;
-                padding-right: 1px;
+                font-weight: 500;
         }
         .price__text_green {
                 font-size: 12px;
-                font-weight: 600;
+                font-weight: 500;
+                padding-left: 2px;
                 padding-right: 2px;
         }
 }
 
 @media (max-width: 390px) {
         .price__text_dark {
-                font-size: 12px;
-                font-weight: 600;
-                padding-right: 1px;
+                font-size: 11px;
+                font-weight: 500;
         }
         .price__text_green {
-                font-size: 12px;
-                font-weight: 600;
+                font-size: 11px;
+                font-weight: 500;
+                padding-left: 2px;
                 padding-right: 2px;
         }
 }
@@ -445,7 +460,7 @@ html, a {
 
 
 
-@media (max-width: 600px) {       
+@media (max-width: 768px) {       
         .services__modular_grid {
                 flex-direction: column;
         }
@@ -604,7 +619,7 @@ html, a {
 }
 
 
-@media (max-width: 600px) {      
+@media (max-width: 768px) {      
         .footer__modular_grid {
                 flex-direction: column;
                 gap: 30px;
