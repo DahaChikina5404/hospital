@@ -105,24 +105,6 @@ html, a {
         }
 }
 
-@media (max-width: 420px) {
-        .navigation {
-                display: none;
-        }
-        #header_menu__mobile_burger {
-                display: flex;
-        }
-}
-
-@media (max-width: 390px) {
-        .navigation {
-                display: none;
-        }
-        #header_menu__mobile_burger {
-                display: flex;
-        }
-}
-
 
 
 /* Главная картинка с заголовком и кнопкой. Фоновая картинка */
@@ -189,6 +171,17 @@ html, a {
         .hero_title {
                 font-weight: 600;
                 font-size: 36px;
+}
+        .hero_text {
+                width: 80%;
+                padding-bottom: 30px;
+}
+}
+
+@media (max-width: 320px) {
+        .hero_title {
+                font-weight: 500;
+                font-size: 30px;
 }
         .hero_text {
                 width: 80%;
@@ -377,6 +370,23 @@ html, a {
         }
 }
 
+@media (max-width: 320px) {        
+        .services__modular_grid {
+                flex-direction: column;
+        }
+        .service_page-1 {
+                width: 100%;
+        }
+        .service_page-2 {
+                width: 100%;
+        }
+        .service_page-3 {
+                width: 100%;
+        }
+        .service_page__opacity {
+                width: 100%;
+        }
+}
 
 
 
@@ -433,6 +443,11 @@ html, a {
 }
 }
 
+@media (max-width: 320px) {
+        .about_us__text {
+                text-align: center;
+}
+}
 
 /* Отзывы. Четыре контейнера с фото */
 
@@ -616,7 +631,18 @@ html, a {
         }
 }
 
-
+@media (max-width: 320px) {
+        .offices_background {
+                height: 900px;
+        }        
+        .offices_background__opacity {
+                height: 900px;
+        } 
+        .offices__modular_grid {
+                flex-direction: column;
+                width: 100%;
+        }
+}
 
 
 /* Футер (модульные сетки)*/
@@ -754,5 +780,18 @@ html, a {
         }
         .footer_license {
                 font-size: 14px;
+        }
+}
+
+@media (max-width: 320px) { 
+        .footer_section-1 {
+                font-size: 16px;
+                
+        }
+        .footer_license {
+                font-size: 14px;
+        }
+        .scroll_up {
+                font-size: 40px; 
         }
 }

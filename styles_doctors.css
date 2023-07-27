@@ -105,24 +105,6 @@ html, a {
         }
 }
 
-@media (max-width: 420px) {
-        .navigation {
-                display: none;
-        }
-        #header_menu__mobile_burger {
-                display: flex;
-        }
-}
-
-@media (max-width: 390px) {
-        .navigation {
-                display: none;
-        }
-        #header_menu__mobile_burger {
-                display: flex;
-        }
-}
-
 
 
 /* Главная картинка с заголовком и кнопкой. Основной текст о специалистах клиники */
@@ -169,6 +151,15 @@ html, a {
         }
 }
 
+@media (max-width: 320px) {
+        .hero_description__title {
+            font-size: 36px;
+            line-height: 120%;
+        }
+        .hero_description__content {
+            font-size: 20px;
+        }
+}
 
 
 /* Строка поиска (форма) */
@@ -212,12 +203,6 @@ html, a {
         justify-content: space-between;
         gap: 15px;
         width: calc(100%-15px*2/3);
-}
-
-@media (max-width: 768px) { 
-        .section__modular_grid {
-             flex-direction: column;
-        }
 }
 
 
@@ -271,6 +256,19 @@ html, a {
 }
 
 
+@media (max-width: 768px) { 
+        .section__modular_grid {
+             flex-direction: column;
+        }
+}
+
+
+@media (max-width: 320px) { 
+        .doctor_image {
+                width: 300px;
+                height: 220px;
+        }
+}
 
 
 /* Футер (модульные сетки)*/
@@ -419,5 +417,18 @@ html, a {
         }
         .scroll_up {
                 font-size: 40px; 
+        }
+}
+
+@media (max-width: 320px) {
+        .footer_section-1 {
+                font-size: 16px;
+                
+        }
+        .footer_license {
+                font-size: 14px;
+        }
+        .scroll_up {
+                font-size: 36px; 
         }
 }
